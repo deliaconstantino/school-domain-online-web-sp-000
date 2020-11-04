@@ -22,7 +22,8 @@ class School
   end
 
   def sort
-    @roster.collect {|grade, name| name.sort }.to_h
+    
+    @roster.values.sort
 
   end
 end
