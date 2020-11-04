@@ -24,7 +24,7 @@ class School
   def sort
     @roster.each do |grade, name|
       @roster[grade] = []
-      @roster[grade] << name.collect {|a, b| a <=> b}
+      @roster[grade] << name.sort
     end
     @roster
   end
